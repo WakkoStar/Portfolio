@@ -4,7 +4,7 @@ export interface Project {
   type: 'Application' | 'Jeu vidéo';
   support: 'PC' | 'Mobile';
   languages: string;
-  domain: 'Projet personel' | 'Projet scolaire' | 'Projet professionel';
+  domain: 'Projet personnel' | 'Projet scolaire' | 'Projet professionnel';
   contents: ProjectContent[];
   links: ProjectLink[];
 }
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     type: 'Application',
     support: 'Mobile',
     languages: 'Unity - C#',
-    domain: 'Projet personel',
+    domain: 'Projet personnel',
     contents: [
       {
         type: 'video',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       {
         type: 'text',
         value:
-          "Universalis est une carte de l'univers pour observer le ciel en temps réel. Les étoiles sont basés sur 100 000 éléments. Elles varient en fonction de leur couleur, taille et magnitude.",
+          "Universalis est une carte de l'univers pour observer le ciel en temps réel. Les étoiles sont basées sur 100 000 éléments. Elles varient en fonction de leur couleur, taille et magnitude.",
       },
       {
         type: 'image',
@@ -50,7 +50,7 @@ export const projects: Project[] = [
       {
         type: 'text',
         value:
-          "La position des astres sont calculées en fonction de votre position et du moment. L'utilisateur utilise le gyroscope de son téléphone pour se situer dans l'espace.",
+          "La position des astres est calculée en fonction de la position de l'hôte sur Terre et de la date courante. L'application se sert du gyroscope du smartphone pour se situer dans l'espace.",
       },
       {
         type: 'image',
@@ -63,7 +63,7 @@ export const projects: Project[] = [
       {
         type: 'text',
         value:
-          "Des fonctionnalités tels que le mode 3D et la page wikipédia de l'astre permettent de comprendre le ciel. Observez sous tous les angles n'importe quelle planète ou étoile.",
+          "Des fonctionnalités telles que le mode 3D et la page Wikipédia de l'astre permettent de comprendre le ciel. Observez n'importe quelle planète ou étoile sous tous ses angles.",
       },
       {
         type: 'image',
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     type: 'Jeu vidéo',
     support: 'Mobile',
     languages: 'Unity - C#',
-    domain: 'Projet personel',
+    domain: 'Projet personnel',
     contents: [
       {
         type: 'video',
@@ -197,7 +197,7 @@ export const projects: Project[] = [
       {
         type: 'text',
         value:
-          "Jeu d'horreur à la première personne. Vous devez récupérer des collectables disséminées à travers la carte. Des ennemis vous en empecheront, utlisez votre lampe torche pour les tuer",
+          "Jeu d'horreur à la première personne. Vous devez récupérer des collectables disséminés à travers le niveau. Des ennemis vous en empêcheront, utilisez votre lampe torche pour les tuer.",
       },
       {
         type: 'image',
@@ -214,7 +214,7 @@ export const projects: Project[] = [
       {
         type: 'text',
         value:
-          'Basé sur le vrai monde, en fonction de la longitude et la latitude choisie. Le niveau va générer terrain, bâtiments, collectables, lampadaires grâce aux données récupérées de la carte.',
+          'Basé sur le vrai monde, en fonction de la longitude et la latitude choisie. Le niveau va générer un terrain, des bâtiments, des collectables, des lampadaires grâce aux données récupérées de la carte du monde.',
       },
       {
         type: 'image',
@@ -284,7 +284,7 @@ export const templateProject: Project = {
   type: 'Application',
   support: 'PC',
   languages: '',
-  domain: 'Projet personel',
+  domain: 'Projet personnel',
   contents: [],
   links: [],
 };
