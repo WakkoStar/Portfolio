@@ -1,0 +1,20 @@
+.presentation {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media (min-width:961px)  {
+    
+    .presentation {
+        width: 80%;
+        margin: 0 10%;
+        overflow-y: hidden;
+        padding-bottom: 10vw;
+
+        &-wrapper {
+            padding-top: 5vw;
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+<div [class]="projectTextClass">
+    <div class="project-text-wrapper" 
+        [attr.data-aos]="isReversed ? 'fade-right' : 'fade-left'"
+        data-aos-delay="250" 
+        data-aos-mirror="true"
+    >
+        <p>{{text}}</p>
+    </div>
+    <div class="project-text-frame"
+        [attr.data-aos]="isReversed ?  'fade-left' : 'fade-right'" 
+        data-aos-mirror="true"
+    > </div>
+</div>

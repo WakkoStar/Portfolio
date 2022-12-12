@@ -1,0 +1,34 @@
+<div [class]="projectClass">
+    <a (click)="goToNewScreen('/project/' + project.name.toLowerCase())">
+        <h2 class="project-number" 
+            data-aos="fade-zoom-in" 
+            data-aos-mirror="true"
+        >
+            0{{index}}.
+        </h2>
+        <div class="project-image">
+            <img class="project-image-pic" [src]="project.thumbnailUrl" 
+                [attr.data-aos]="fadeDirection"
+                data-aos-mirror="true"
+                data-aos-delay="0"
+            />
+            <div class="project-image-frame"
+                [attr.data-aos]="fadeDirection"
+                data-aos-mirror="true"
+                data-aos-delay="500"
+            > </div>
+        </div>
+        <div class="project-title">
+            <h2 
+                [attr.data-aos]="fadeDirection"
+                data-aos-mirror="true"
+                data-aos-delay="500"
+            >{{project.name.toUpperCase()}}</h2>
+            <div class="project-title-frame"
+                [attr.data-aos]="fadeDirection"
+                data-aos-mirror="true"
+                data-aos-delay="1000"
+            > </div>
+        </div>
+    </a>
+</div>

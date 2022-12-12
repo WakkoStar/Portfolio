@@ -1,0 +1,41 @@
+<div [class]="projectClassName">
+<app-nav link="presentation"></app-nav>
+
+<div class="project" appHorizontalScroll>
+    <div class="project-text">
+        <div class="project-text-header"
+            data-aos="fade-left" 
+            data-aos-delay="250" 
+            data-aos-mirror="true"
+        >
+            <h1>{{project.name}}</h1>
+            <p>• {{project.type}}</p>
+            <p>• Support : {{project.support}}</p>
+            <p>• Technos : {{project.languages}}</p>
+            <p>• {{project.domain}}</p>
+        </div>
+        <div class="project-text-frame"
+            data-aos="fade-right" 
+            data-aos-mirror="true"
+        > </div>
+    </div>
+    <ng-template ngFor let-content [ngForOf]="project.contents">
+
+        <ng-template [ngIf]="content.type === 'image'">
+            <app-project-image [imageUrl]="content.value"></app-project-image>
+        </ng-template>
+
+        <ng-template [ngIf]="content.type === 'text'">
+            <app-project-text [text]="content.value" [isReversed]="isTextIndexIsPair(project.contents, content)"></app-project-text>
+        </ng-template>
+
+        <ng-template [ngIf]="content.type === 'video'">
+            <app-project-video [linkToVideo]="content.url || ''" [imageUrl]="content.value"></app-project-video>
+        </ng-template>
+
+    </ng-template>
+    <div class="project-links">
+        <a *ngFor="let link of project.links" [href]="link.url">{{link.label}}</a>
+    </div>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<div style="overflow: hidden;">
+  <div [class]="projectClassName">
+      <a class="project-route" (click)="goToNewScreen('/presentation')">
+        <div class="project-panel">
+          <h2 class="project-name">PROJETS</h2>
+          <img class="project-icon" src="../assets/right-arrow.png"/>
+        </div>
+      </a>
+  </div>
+    
+  <div [class]="mainClassName">
+    <div class="main-profile">
+      <img class="main-profile-pic" src="../assets/home-pic.jpg"/>
+      <div [class]="mainProfileFrameClassName"></div>
+    </div>
+    <div [class]="mainLinksClassName">
+      <a href="mailto:delpiahugo@gmail.com
+      ?subject=Prise de contact
+      &body=Bonjour Hugo,">
+        Me contacter
+      </a>
+      <a (click)="goToNewScreen('/apropos')" routerLinkActive="active">A propos</a>
+    </div>
+  </div>
+
+  <div [class]="textsClassName">
+    <h1 class="texts-firstname">HUGO</h1>
+    <h1 class="texts-lastname">DEL PIA</h1>
+    <h2>Game Programmer</h2>
+  </div>
+</div>

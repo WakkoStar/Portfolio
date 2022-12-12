@@ -1,0 +1,15 @@
+<div class="presentation">
+
+    <app-nav link="home"></app-nav>
+
+    <div class="presentation-wrapper">
+        <app-presentation-project 
+        *ngFor="let project of projects; index as i;" 
+        [index]="i+1" 
+        [project]="project"
+    >
+    </app-presentation-project>
+    </div>
+
+
+</div>
