@@ -23,7 +23,7 @@ interface ProjectLink {
 export const projects: Project[] = [
   {
     name: 'Universalis',
-    thumbnailUrl: '../assets/universalis/sun-universalis.jpg',
+    thumbnailUrl: 'assets/universalis/sun-universalis.jpg',
     type: 'Application',
     support: 'Mobile',
     languages: 'Unity - C#',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
       {
         type: 'video',
         url: 'https://youtube.com/shorts/Tr8m9fRS_oo?feature=share',
-        value: '../assets/universalis/universalis-video-thumbnail.jpg',
+        value: 'assets/universalis/universalis-video-thumbnail.jpg',
       },
       {
         type: 'text',
@@ -41,11 +41,11 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/universalis/blue-star-universalis.jpg',
+        value: 'assets/universalis/blue-star-universalis.jpg',
       },
       {
         type: 'image',
-        value: '../assets/universalis/universalis-jupiter.jpg',
+        value: 'assets/universalis/universalis-jupiter.jpg',
       },
       {
         type: 'text',
@@ -54,11 +54,11 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/universalis/sun-universalis-3d-mode.jpg',
+        value: 'assets/universalis/sun-universalis-3d-mode.jpg',
       },
       {
         type: 'image',
-        value: '../assets/universalis/universalis-screenshot.jpg',
+        value: 'assets/universalis/universalis-screenshot.jpg',
       },
       {
         type: 'text',
@@ -67,15 +67,15 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/universalis/saturn-in-sky-universalis.jpg',
+        value: 'assets/universalis/saturn-in-sky-universalis.jpg',
       },
       {
         type: 'image',
-        value: '../assets/universalis/saturn-universalis-3d-mode.jpg',
+        value: 'assets/universalis/saturn-universalis-3d-mode.jpg',
       },
       {
         type: 'image',
-        value: '../assets/universalis/saturn-text-universalis.jpg',
+        value: 'assets/universalis/saturn-text-universalis.jpg',
       },
     ],
     links: [
@@ -99,7 +99,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Skate Rider',
-    thumbnailUrl: '../assets/skaterider/skaterider-jump.jpg',
+    thumbnailUrl: 'assets/skaterider/skaterider-jump.jpg',
     type: 'Jeu vidéo',
     support: 'Mobile',
     languages: 'Unity - C#',
@@ -108,7 +108,7 @@ export const projects: Project[] = [
       {
         type: 'video',
         url: 'https://youtube.com/shorts/4c6sTHAPQ-w?feature=share',
-        value: '../assets/skaterider/skaterider-video-thumbnail.jpg',
+        value: 'assets/skaterider/skaterider-video-thumbnail.jpg',
       },
       {
         type: 'text',
@@ -117,19 +117,19 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-level-jump.jpg',
+        value: 'assets/skaterider/skaterider-level-jump.jpg',
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-tricks.jpg',
+        value: 'assets/skaterider/skaterider-tricks.jpg',
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-level-grind.jpg',
+        value: 'assets/skaterider/skaterider-level-grind.jpg',
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-gameplay.jpg',
+        value: 'assets/skaterider/skaterider-gameplay.jpg',
       },
       {
         type: 'text',
@@ -138,19 +138,19 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-level.jpg',
+        value: 'assets/skaterider/skaterider-level.jpg',
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-tiles.jpg',
+        value: 'assets/skaterider/skaterider-tiles.jpg',
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-start-screen.jpg',
+        value: 'assets/skaterider/skaterider-start-screen.jpg',
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-end-screen.jpg',
+        value: 'assets/skaterider/skaterider-end-screen.jpg',
       },
       {
         type: 'text',
@@ -159,11 +159,11 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-custom.jpg',
+        value: 'assets/skaterider/skaterider-custom.jpg',
       },
       {
         type: 'image',
-        value: '../assets/skaterider/skaterider-lootbox.jpg',
+        value: 'assets/skaterider/skaterider-lootbox.jpg',
       },
     ],
     links: [
@@ -183,7 +183,7 @@ export const projects: Project[] = [
   },
   {
     name: 'City Escape',
-    thumbnailUrl: '../assets/cityescape/city-escape-wallpaper.jpg',
+    thumbnailUrl: 'assets/cityescape/city-escape-wallpaper.jpg',
     type: 'Jeu vidéo',
     support: 'PC',
     languages: 'Unity - C#',
@@ -191,7 +191,7 @@ export const projects: Project[] = [
     contents: [
       {
         type: 'video',
-        value: '../assets/cityescape/city-escape-video-thumbnail.jpg',
+        value: 'assets/cityescape/city-escape-video-thumbnail.jpg',
         url: 'https://youtu.be/YyBk659A8Ac',
       },
       {
@@ -201,15 +201,15 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/cityescape/city-escape-gameplay.jpg',
+        value: 'assets/cityescape/city-escape-gameplay.jpg',
       },
       {
         type: 'image',
-        value: '../assets/cityescape/city-escape-collectable.jpg',
+        value: 'assets/cityescape/city-escape-collectable.jpg',
       },
       {
         type: 'image',
-        value: '../assets/cityescape/city-escape-monster.jpg',
+        value: 'assets/cityescape/city-escape-monster.jpg',
       },
       {
         type: 'text',
@@ -218,22 +218,22 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/cityescape/city-escape-choose-city.jpg',
+        value: 'assets/cityescape/city-escape-choose-city.jpg',
       },
       {
         type: 'image',
-        value: '../assets/cityescape/city-escape-level.jpg',
+        value: 'assets/cityescape/city-escape-level.jpg',
       },
       {
         type: 'image',
-        value: '../assets/cityescape/city-escape-level-view.jpg',
+        value: 'assets/cityescape/city-escape-level-view.jpg',
       },
     ],
     links: [],
   },
   {
     name: 'AR Signe',
-    thumbnailUrl: '../assets/arsign/arsign-logo.jpg',
+    thumbnailUrl: 'assets/arsign/arsign-logo.jpg',
     type: 'Application',
     support: 'Mobile',
     languages: 'Unity - C#',
@@ -241,7 +241,7 @@ export const projects: Project[] = [
     contents: [
       {
         type: 'video',
-        value: '../assets/arsign/arsign-menu.jpg',
+        value: 'assets/arsign/arsign-menu.jpg',
         url: 'https://youtube.com/shorts/kEZ4eQYAuxI?feature=share',
       },
       {
@@ -251,27 +251,27 @@ export const projects: Project[] = [
       },
       {
         type: 'image',
-        value: '../assets/arsign/arsign-start-screen.jpg',
+        value: 'assets/arsign/arsign-start-screen.jpg',
       },
       {
         type: 'image',
-        value: '../assets/arsign/arsign-pose-character.jpg',
+        value: 'assets/arsign/arsign-pose-character.jpg',
       },
       {
         type: 'image',
-        value: '../assets/arsign/arsign-hello.jpg',
+        value: 'assets/arsign/arsign-hello.jpg',
       },
       {
         type: 'image',
-        value: '../assets/arsign/arsign-menu.jpg',
+        value: 'assets/arsign/arsign-menu.jpg',
       },
       {
         type: 'image',
-        value: '../assets/arsign/arsign-goodbye.jpg',
+        value: 'assets/arsign/arsign-goodbye.jpg',
       },
       {
         type: 'image',
-        value: '../assets/arsign/arsign-dog.jpg',
+        value: 'assets/arsign/arsign-dog.jpg',
       },
     ],
     links: [],
