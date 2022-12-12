@@ -214,7 +214,7 @@ export const projects: Project[] = [
       {
         type: 'text',
         value:
-          'Basé sur le vrai monde, en fonction de la longitude et la latitude choisie. Le niveau va générer un terrain, des bâtiments, des collectables, des lampadaires grâce aux données récupérées de la carte du monde.',
+          'Basé sur le vrai monde, selon la position choisie, le niveau va générer un terrain, des bâtiments, des collectables et des lampadaires grâce aux données récupérées.',
       },
       {
         type: 'image',
