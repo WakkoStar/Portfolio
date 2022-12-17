@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { AssistanceComponent } from './assistance/assistance.component';
 import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ProjectComponent } from './project/project.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'apropos', component: AboutComponent },
   { path: 'project/:name', component: ProjectComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'privacy', component: AssistanceComponent },
 ];
 
 @NgModule({

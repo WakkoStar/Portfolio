@@ -13,6 +13,7 @@ import { ProjectVideoComponent } from './project-video/project-video.component';
 import { ProjectTextComponent } from './project-text/project-text.component';
 import { ProjectImageComponent } from './project-image/project-image.component';
 import { HorizontalScrollDirective } from './horizontal-scroll.directive';
+import { AssistanceComponent } from './assistance/assistance.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HorizontalScrollDirective } from './horizontal-scroll.directive';
     ProjectTextComponent,
     ProjectImageComponent,
     HorizontalScrollDirective,
+    AssistanceComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
