@@ -14,6 +14,7 @@ import { ProjectTextComponent } from './project-text/project-text.component';
 import { ProjectImageComponent } from './project-image/project-image.component';
 import { HorizontalScrollDirective } from './horizontal-scroll.directive';
 import { AssistanceComponent } from './assistance/assistance.component';
+import { AssistanceUniversalisComponent } from './assistance-universalis/assistance-universalis.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AssistanceComponent } from './assistance/assistance.component';
     ProjectImageComponent,
     HorizontalScrollDirective,
     AssistanceComponent,
+    AssistanceUniversalisComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
