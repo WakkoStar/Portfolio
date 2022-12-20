@@ -13,8 +13,8 @@ import { ProjectVideoComponent } from './project-video/project-video.component';
 import { ProjectTextComponent } from './project-text/project-text.component';
 import { ProjectImageComponent } from './project-image/project-image.component';
 import { HorizontalScrollDirective } from './horizontal-scroll.directive';
-import { AssistanceComponent } from './assistance/assistance.component';
-import { AssistanceUniversalisComponent } from './assistance-universalis/assistance-universalis.component';
+import { AssistanceComponent } from './assistance/assistance-skaterider/assistance.component';
+import { AssistanceUniversalisComponent } from './assistance/assistance-universalis/assistance-universalis.component';
 
 @NgModule({
   declarations: [

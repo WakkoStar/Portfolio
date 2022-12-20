@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-import { AssistanceUniversalisComponent } from './assistance-universalis/assistance-universalis.component';
-import { AssistanceComponent } from './assistance/assistance.component';
+import { AssistanceUniversalisComponent } from './assistance/assistance-universalis/assistance-universalis.component';
+import { AssistanceComponent } from './assistance/assistance-skaterider/assistance.component';
 import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ProjectComponent } from './project/project.component';
