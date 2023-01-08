@@ -1,0 +1,52 @@
+$background:  #0A0A0A;
+$primary:  #DCFF7D;
+$secondary: #1E1E1E;
+$title-tiers:  #DCFF7D;
+$title-primary: #0A0A0A;
+$title-secondary: #C7C7C7;
+$text-secondary: #1E1E1E;
+
+.download {
+    &-main {
+        height: 80vh;
+        width: 90%;
+        padding: 10vh 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        font-size: 10vw;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 0;
+        font-family: 'Kanit';
+        color: $primary;
+        font-weight: 700;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15% 0;
+    }
+    &-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width:961px)  {
+    .download {
+        &-main {
+            width: 30%;
+            padding: 10vh 35%;
+        }
+        &-title { 
+            font-size: 3vw;
+        }
+    }
+}

@@ -13,8 +13,9 @@ import { ProjectVideoComponent } from './project-video/project-video.component';
 import { ProjectTextComponent } from './project-text/project-text.component';
 import { ProjectImageComponent } from './project-image/project-image.component';
 import { HorizontalScrollDirective } from './horizontal-scroll.directive';
-import { AssistanceComponent } from './assistance/assistance-skaterider/assistance.component';
-import { AssistanceUniversalisComponent } from './assistance/assistance-universalis/assistance-universalis.component';
+import { PrivacySkateRiderComponent } from './privacy/privacy-skaterider/privacy-skaterider.component';
+import { PrivacyUniversalisComponent } from './privacy/privacy-universalis/privacy-universalis.component';
+import { DownloadComponent } from './download/download.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,9 @@ import { AssistanceUniversalisComponent } from './assistance/assistance-universa
     ProjectTextComponent,
     ProjectImageComponent,
     HorizontalScrollDirective,
-    AssistanceComponent,
-    AssistanceUniversalisComponent,
+    PrivacySkateRiderComponent,
+    PrivacyUniversalisComponent,
+    DownloadComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

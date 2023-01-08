@@ -7,6 +7,7 @@ export interface Project {
   domain: 'Projet personnel' | 'Projet scolaire' | 'Projet professionnel';
   contents: ProjectContent[];
   links: ProjectLink[];
+  appDownload?: { type: 'Google' | 'Apple'; url: string }[];
 }
 
 export interface ProjectContent {
@@ -81,7 +82,7 @@ export const projects: Project[] = [
     links: [
       {
         label: "Télécharger l'application",
-        url: 'TODO',
+        url: '/download/universalis',
       },
       {
         label: "Obtenir la ressource d'étoiles",
@@ -94,6 +95,16 @@ export const projects: Project[] = [
       {
         label: 'Voir Repo Github',
         url: 'https://github.com/WakkoStar/Universalis',
+      },
+    ],
+    appDownload: [
+      {
+        type: 'Google',
+        url: 'TODO',
+      },
+      {
+        type: 'Apple',
+        url: 'https://apps.apple.com/us/app/universalis-3d/id1660394625',
       },
     ],
   },
@@ -169,7 +180,7 @@ export const projects: Project[] = [
     links: [
       {
         label: "Télécharger l'application",
-        url: 'TODO',
+        url: '/download/skate%20rider',
       },
       {
         label: 'Voir plus de vidéos',
@@ -178,6 +189,16 @@ export const projects: Project[] = [
       {
         label: 'Voir Repo Github',
         url: 'https://github.com/WakkoStar/SkateRider',
+      },
+    ],
+    appDownload: [
+      {
+        type: 'Google',
+        url: 'TODO',
+      },
+      {
+        type: 'Apple',
+        url: 'https://apps.apple.com/us/app/skate-rider/id1660363826',
       },
     ],
   },
