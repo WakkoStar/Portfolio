@@ -10,22 +10,25 @@ import { SkateRiderPrivacy } from './pages/Privacy/SkateRiderPrivacy';
 import { UniversalisPrivacy } from './pages/Privacy/UniversalisPrivacy';
 
 function App() {
-  const router = createBrowserRouter([
-    { path: '/Portfolio', element: <Homepage /> },
-    { path: '/Portfolio/nutripoint', element: <Nutripoint /> },
-    { path: '/Portfolio/skate-rider', element: <SkateRider /> },
-    { path: '/Portfolio/universalis', element: <Universalis /> },
-    {
-      path: '/Portfolio/download/universalis',
-      element: <DownloadUniversalis />,
-    },
-    {
-      path: '/Portfolio/download/skate-rider',
-      element: <DownloadSkateRider />,
-    },
-    { path: '/Portfolio/privacy', element: <SkateRiderPrivacy /> },
-    { path: '/Portfolio/universalis/privacy', element: <UniversalisPrivacy /> },
-  ]);
+  const router = createBrowserRouter(
+    [
+      { path: '/', element: <Homepage /> },
+      { path: '/nutripoint', element: <Nutripoint /> },
+      { path: '/skate-rider', element: <SkateRider /> },
+      { path: '/universalis', element: <Universalis /> },
+      {
+        path: '/download/universalis',
+        element: <DownloadUniversalis />,
+      },
+      {
+        path: '/download/skate-rider',
+        element: <DownloadSkateRider />,
+      },
+      { path: '/privacy', element: <SkateRiderPrivacy /> },
+      { path: '/universalis/privacy', element: <UniversalisPrivacy /> },
+    ],
+    { basename: '/Portfolio' }
+  );
 
   return <RouterProvider router={router} />;
 }
