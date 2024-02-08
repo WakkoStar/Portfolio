@@ -6,6 +6,7 @@
 body {
   scrollbar-width: thin;
   scrollbar-color: #e8e4d8 #fefaec;
+  background-color: #fefaec;
 }
 
 /* Chrome, Edge, and Safari */
