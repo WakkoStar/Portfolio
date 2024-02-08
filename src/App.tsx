@@ -1,6 +1,6 @@
 import './App.css';
 import { Homepage } from './pages/Homepage';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { Nutripoint } from './pages/Projects/Nutripoint';
 import { SkateRider } from './pages/Projects/SkateRider';
 import { Universalis } from './pages/Projects/Universalis';
@@ -10,7 +10,7 @@ import { SkateRiderPrivacy } from './pages/Privacy/SkateRiderPrivacy';
 import { UniversalisPrivacy } from './pages/Privacy/UniversalisPrivacy';
 
 function App() {
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     [
       { path: '/', element: <Homepage /> },
       { path: '/nutripoint', element: <Nutripoint /> },
