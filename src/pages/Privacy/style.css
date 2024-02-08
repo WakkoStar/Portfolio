@@ -1,0 +1,16 @@
+.privacy {
+  max-width: 450px;
+  width: calc(100% - 10px);
+  margin: 20px auto;
+
+  & h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #403f3b;
+  }
+  & p {
+    line-height: 130%;
+    font-size: 16px;
+    color: #403f3b;
+  }
+}
