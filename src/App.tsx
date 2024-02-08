@@ -27,7 +27,7 @@ function App() {
       { path: '/privacy', element: <SkateRiderPrivacy /> },
       { path: '/universalis/privacy', element: <UniversalisPrivacy /> },
     ],
-    { basename: '/' }
+    { basename: '/Portfolio' }
   );
 
   return <RouterProvider router={router} />;
