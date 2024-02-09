@@ -166,7 +166,7 @@ export const Universalis = () => {
       links: [
         {
           label: 'Télécharger',
-          link: '/download/universalis',
+          link: '/#/download/universalis',
         },
         {
           label: 'Voir le code source',

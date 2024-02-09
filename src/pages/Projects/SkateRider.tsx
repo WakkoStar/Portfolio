@@ -193,7 +193,7 @@ export const SkateRider = () => {
       links: [
         {
           label: 'Télécharger',
-          link: '/download/skate-rider',
+          link: '/#/download/skate-rider',
         },
         {
           label: 'Voir le code source',

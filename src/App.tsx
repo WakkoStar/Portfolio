@@ -24,8 +24,6 @@ function App() {
         path: '/download/skate-rider',
         element: <DownloadSkateRider />,
       },
-      { path: '/privacy', element: <SkateRiderPrivacy /> },
-      { path: '/universalis/privacy', element: <UniversalisPrivacy /> },
     ],
     { basename: '/' }
   );
