@@ -6,8 +6,6 @@ import { SkateRider } from './pages/Projects/SkateRider';
 import { Universalis } from './pages/Projects/Universalis';
 import { SkateRider as DownloadSkateRider } from './pages/Download/SkateRider';
 import { Universalis as DownloadUniversalis } from './pages/Download/Universalis';
-import { SkateRiderPrivacy } from './pages/Privacy/SkateRiderPrivacy';
-import { UniversalisPrivacy } from './pages/Privacy/UniversalisPrivacy';
 
 function App() {
   const router = createHashRouter(
