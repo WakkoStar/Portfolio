@@ -215,7 +215,3 @@ export const Homepage = () => {
     </div>
   );
 };
-//TODO retravailler CV
-//TODO se rendre dispo sur malt
-//TODO faire un post avec vidéo portfolio sur linkedin
-//TODO démarrer un plan d'action pour obtenir du prospect et bonne pratiques
