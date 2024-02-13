@@ -109,7 +109,7 @@ export const Nutripoint = () => {
         ),
         paragraph: (
           <>
-            Le receuil des besoins personnels de l’utilisateur sont la
+            Le recueil des besoins personnels de l’utilisateur sont la
             plus-value de Nutripoint. La présence constante de ces informations
             était requise. Le problème, c’est qu’elles représentent beaucoup de
             données à afficher et à comprendre.
