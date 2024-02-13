@@ -195,10 +195,10 @@ export const SkateRider = () => {
           label: 'Télécharger',
           link: '/#/download/skate-rider',
         },
-        {
-          label: 'Voir le code source',
-          link: 'https://github.com/WakkoStar/SkateRider',
-        },
+        // {
+        //   label: 'Voir le code source',
+        //   link: 'https://github.com/WakkoStar/SkateRider',
+        // },
       ],
     },
   };
