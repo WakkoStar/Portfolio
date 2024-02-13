@@ -46,6 +46,11 @@ export const ProjectWrapper: React.FC<ProjectWrapperProps> = ({
       duration: 0.5,
       delay: 0.8,
     });
+    gsap.from('.back-btn', {
+      opacity: 1,
+      duration: 0.5,
+      delay: 0.8,
+    });
     //@ts-expect-error null
   }, null);
 
@@ -57,6 +62,15 @@ export const ProjectWrapper: React.FC<ProjectWrapperProps> = ({
       xPercent: 20,
       duration: 0.8,
       ease: 'power3.inOut',
+    });
+    gsap.to('.back-btn-wrapper', {
+      opacity: 0,
+      height: 0,
+      duration: 0.2,
+    });
+    gsap.to('.back-btn', {
+      opacity: 0,
+      duration: 0.2,
     });
 
     setTimeout(
@@ -76,85 +90,89 @@ export const ProjectWrapper: React.FC<ProjectWrapperProps> = ({
   };
 
   return (
-    <div className="project">
-      <div className="project-container">
+    <>
+      <div className="back-btn-wrapper">
         <button className="back-btn" onClick={handleBack}>
           <img src={darkArrow} />
         </button>
-        <div className="project-presentation">
-          <div className="presentation-texts">
-            <div className="texts-header">
-              <div className="header-texts">
-                <h1>{title}</h1>
-                <p>{description}</p>
-              </div>
-              <div className="header-tags">
-                <div className="tag-container">
-                  <p className="label">Outils</p>
-                  <div className="tag-wrapper">
-                    {tags.tools.map((tag, index) => (
-                      <div className="tag-item tools" key={index}>
-                        {!!tag.icon && <img src={tag.icon} />}
-                        <p>{tag.label}</p>
-                      </div>
-                    ))}
+      </div>
+      <div className="project">
+        <div className="project-container">
+          <div className="project-presentation">
+            <div className="presentation-texts">
+              <div className="texts-header">
+                <div className="header-texts">
+                  <h1>{title}</h1>
+                  <p>{description}</p>
+                </div>
+                <div className="header-tags">
+                  <div className="tag-container">
+                    <p className="label">Outils</p>
+                    <div className="tag-wrapper">
+                      {tags.tools.map((tag, index) => (
+                        <div className="tag-item tools" key={index}>
+                          {!!tag.icon && <img src={tag.icon} />}
+                          <p>{tag.label}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="tag-container">
+                    <p className="label">Rôles</p>
+                    <div className="tag-wrapper">
+                      {tags.roles.map((tag, index) => (
+                        <div className="tag-item roles" key={index}>
+                          {!!tag.icon && <img src={tag.icon} />}
+                          <p>{tag.label}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className="tag-container">
-                  <p className="label">Rôles</p>
-                  <div className="tag-wrapper">
-                    {tags.roles.map((tag, index) => (
-                      <div className="tag-item roles" key={index}>
-                        {!!tag.icon && <img src={tag.icon} />}
-                        <p>{tag.label}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
               </div>
+              <HorizontalScrollWrapper className="texts-buttons">
+                {links.map((link, index) => (
+                  <button onClick={() => window.open(link.link)} key={index}>
+                    <p>{link.label}</p>
+                  </button>
+                ))}
+              </HorizontalScrollWrapper>
             </div>
-            <HorizontalScrollWrapper className="texts-buttons">
-              {links.map((link, index) => (
-                <button onClick={() => window.open(link.link)} key={index}>
-                  <p>{link.label}</p>
-                </button>
-              ))}
-            </HorizontalScrollWrapper>
-          </div>
-          <HorizontalScrollWrapper
-            className="presentation-images"
-            id="presentation"
-            containerClassName="presentation-images-container"
-          >
-            {imagesPresentation.map((image, index) => (
-              <ImageWithLoading
-                containerId="presentation"
-                {...image}
-                key={index}
-              />
-            ))}
-          </HorizontalScrollWrapper>
-        </div>
-        {texts.map(({ title, paragraph, images }, index) => (
-          <div className="project-section" key={index}>
-            <h2>{title}</h2>
-            <p>{paragraph}</p>
             <HorizontalScrollWrapper
-              containerClassName="section-images-container"
-              className="section-images"
-              id={`section-${index}`}
+              className="presentation-images"
+              id="presentation"
+              containerClassName="presentation-images-container"
             >
-              {images.map((image, subIndex) => (
+              {imagesPresentation.map((image, index) => (
                 <ImageWithLoading
-                  containerId={`section-${index}`}
+                  containerId="presentation"
                   {...image}
-                  key={subIndex}
+                  key={index}
                 />
               ))}
             </HorizontalScrollWrapper>
           </div>
-        ))}
+          {texts.map(({ title, paragraph, images }, index) => (
+            <div className="project-section" key={index}>
+              <h2>{title}</h2>
+              <p>{paragraph}</p>
+              <HorizontalScrollWrapper
+                containerClassName="section-images-container"
+                className="section-images"
+                id={`section-${index}`}
+              >
+                {images.map((image, subIndex) => (
+                  <ImageWithLoading
+                    containerId={`section-${index}`}
+                    {...image}
+                    key={subIndex}
+                  />
+                ))}
+              </HorizontalScrollWrapper>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };

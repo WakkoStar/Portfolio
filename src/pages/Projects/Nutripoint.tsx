@@ -109,10 +109,10 @@ export const Nutripoint = () => {
         ),
         paragraph: (
           <>
-            Les besoins personnels de l’utilisateur sont la plus-value de
-            Nutripoint. La présence constante de ces informations était requise.
-            Le problème, c’est qu’elles représentent beaucoup de données à
-            afficher et à comprendre.
+            Le receuil des besoins personnels de l’utilisateur sont la
+            plus-value de Nutripoint. La présence constante de ces informations
+            était requise. Le problème, c’est qu’elles représentent beaucoup de
+            données à afficher et à comprendre.
             <br />
             <br />
             Assurer la lisibilité sur tout écran et toute page a été l’une de
@@ -174,7 +174,7 @@ export const Nutripoint = () => {
       },
       links: [
         {
-          label: 'Commencer un bilan',
+          label: 'Consulter le site',
           link: 'https://nutripoint.io/assessments/b2cfbd2b-1375-4e4d-8e0f-f2dcb95d9843',
         },
       ],
