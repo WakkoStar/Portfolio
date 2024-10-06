@@ -136,7 +136,7 @@ export const Homepage = () => {
               Hugo <br className="mobile-only" /> DEL PIA
             </h1>
             <div className="roles-wrapper" ref={roleRef as any}>
-              <p className="web role-item">Développeur web</p>
+              <p className="web role-item">Créative développeur</p>
               <p className="et role-item">&</p>
               <p className="ui-ux role-item">Designer UI/UX</p>
             </div>
@@ -146,12 +146,11 @@ export const Homepage = () => {
             <br />
             <br />
             Je suis développeur et designer UI/UX, je conçois des applications
-            web dans l’objectif de créer la meilleure expérience sur votre
-            écran.
+            dans l’objectif de créer la meilleure expérience sur votre écran.
             <br />
             <br />
-            Mes outils préférés sont React et Figma, j’ai 4 ans d’expérience
-            dans le milieu.
+            Mes outils préférés sont la programation et Figma, j’ai 4 ans
+            d’expérience dans le milieu.
           </p>
           <HorizontalScrollWrapper
             className="texts-buttons"
@@ -187,12 +186,12 @@ export const Homepage = () => {
                     window.open('https://www.linkedin.com/in/hugo-del-pia/');
                   },
                 },
-                {
-                  label: '🎯 Malt',
-                  onClick: () => {
-                    window.open('https://www.malt.fr/profile/hugodelpia');
-                  },
-                },
+                // {
+                //   label: '🎯 Malt',
+                //   onClick: () => {
+                //     window.open('https://www.malt.fr/profile/hugodelpia');
+                //   },
+                // },
                 {
                   label: '🎵 Tiktok',
                   onClick: () => {
