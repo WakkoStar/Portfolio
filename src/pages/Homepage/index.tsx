@@ -136,9 +136,9 @@ export const Homepage = () => {
               Hugo <br className="mobile-only" /> DEL PIA
             </h1>
             <div className="roles-wrapper" ref={roleRef as any}>
-              <p className="web role-item">Créative développeur</p>
+              <p className="web role-item">Creative developer</p>
               <p className="et role-item">&</p>
-              <p className="ui-ux role-item">Designer UI/UX</p>
+              <p className="ui-ux role-item">UI/UX Designer</p>
             </div>
           </div>
           <p className="texts-about">
