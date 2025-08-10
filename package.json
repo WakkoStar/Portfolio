@@ -7,30 +7,41 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy" : "yarn build",
-    "deploy" : "gh-pages -d dist --cname hugodelpia.fr",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist --cname hugodelpia.fr",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
     "gsap": "^3.12.5",
+    "lucide-react": "^0.539.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.0"
+    "react-router-dom": "^6.22.0",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^24.2.1",
     "@types/react": "^18.2.54",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.21",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "gh-pages": "^6.1.1",
-    "postcss": "^8.4.34",
+    "postcss": "^8.5.6",
     "postcss-preset-env": "^9.3.0",
+    "tailwindcss": "^4.1.11",
+    "tw-animate-css": "^1.3.6",
     "typescript": "^5.3.3",
     "vite": "^5.0.8"
   }

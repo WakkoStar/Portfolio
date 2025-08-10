@@ -6,6 +6,7 @@ import { SkateRider } from './pages/Projects/SkateRider';
 import { Universalis } from './pages/Projects/Universalis';
 import { SkateRider as DownloadSkateRider } from './pages/Download/SkateRider';
 import { Universalis as DownloadUniversalis } from './pages/Download/Universalis';
+import { ProjectCards } from './pages/ProjectCards';
 
 function App() {
   const router = createHashRouter(
@@ -21,6 +22,10 @@ function App() {
       {
         path: '/download/skate-rider',
         element: <DownloadSkateRider />,
+      },
+      {
+        path: '/cards',
+        element: <ProjectCards />,
       },
     ],
     { basename: '/' }
